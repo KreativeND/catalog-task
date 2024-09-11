@@ -59,6 +59,11 @@
   src: local('Circular Std Medium Italic'), url('assets/fonts/CircularStd-MediumItalic.woff') format('woff');
 }
 
+
+.tab-title {
+  @apply text-[18px] font-circular-book;
+}
+
 /* Example Usage */
 body {
   font-family: 'Circular Std Book', sans-serif;
