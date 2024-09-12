@@ -754,7 +754,7 @@ const AreaChart = React.forwardRef((props, ref) => {
                   strokeWidth={2}
                   strokeLinejoin="round"
                   strokeLinecap="round"
-                  isAnimationActive={false}
+                  isAnimationActive={true}
                   connectNulls={connectNulls}
                   stackId={stacked ? "stack" : undefined}
                   fill={`url(#${categoryId})`}
