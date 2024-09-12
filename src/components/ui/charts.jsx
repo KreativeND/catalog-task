@@ -328,7 +328,7 @@ const ChartTooltip = ({ active, payload, label, valueFormatter }) => {
           // border color
           "border-[#4B40EE] dark:border-[#4B40EE]",
           // background color
-          "bg-white dark:bg-[#4B40EE]"
+          "bg-white text-black"
         )}
       >
         <div className={cx("space-y-1 px-4 py-2")}>
@@ -350,7 +350,7 @@ const ChartTooltip = ({ active, payload, label, valueFormatter }) => {
                     // base
                     "whitespace-nowrap text-right",
                     // text color
-                    "text-gray-700 dark:text-gray-300"
+                    "text-gray-70"
                   )}
                 >
                   {category}
@@ -361,7 +361,7 @@ const ChartTooltip = ({ active, payload, label, valueFormatter }) => {
                   // base
                   "whitespace-nowrap text-right font-medium tabular-nums",
                   // text color
-                  "text-gray-900 dark:text-gray-50"
+                  "text-gray-90"
                 )}
               >
                 {"$" + valueFormatter(value)}
