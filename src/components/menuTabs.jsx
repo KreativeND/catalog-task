@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { cx } from "../lib/utils";
 import { useContext } from "react";
 import { PriceContext } from "../App";
+import { Nothing } from "./nothing";
 
 export const MenuTabs = () => {
   const { fullScreen } = useContext(PriceContext);
@@ -29,12 +30,10 @@ export const MenuTabs = () => {
         </TabsTrigger>
       </TabsList>
       <div className="ml-2 mt-4">
-        <TabsContent
-          value="ChartTab"
-          className=""
-        >
+        <TabsContent value="ChartTab" className="">
           <div
-            className={cx("space-y-2 text-sm leading-7 text-gray-600 dark:text-gray-500 flex flex-col gap-8",
+            className={cx(
+              "space-y-2 text-sm leading-7 text-gray-600 dark:text-gray-500 flex flex-col gap-8",
               fullScreen &&
                 "w-full h-full lg:w-[80%] lg:h-[80%] p-10 bg-white absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 tra lg:shadow-lg rounded-lg flex flex-col justify-center items-start"
             )}
@@ -42,6 +41,19 @@ export const MenuTabs = () => {
             <Actions />
             <AreaChartHero />
           </div>
+        </TabsContent>
+
+        <TabsContent value="SummaryTab" className="">
+          <Nothing />
+        </TabsContent>
+        <TabsContent value="StatisticsTab" className="">
+          <Nothing />
+        </TabsContent>
+        <TabsContent value="AnalysisTab" className="">
+          <Nothing />
+        </TabsContent>
+        <TabsContent value="SettingsTab" className="">
+          <Nothing />
         </TabsContent>
       </div>
     </Tabs>
