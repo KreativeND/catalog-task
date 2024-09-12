@@ -337,6 +337,25 @@ const ChartTooltip = ({ active, payload, label, valueFormatter }) => {
               key={`id-${index}`}
               className="flex items-center justify-between space-x-8"
             >
+              <div className="flex items-center space-x-2">
+                <span
+                  aria-hidden="true"
+                  className={cx(
+                    "h-[3px] w-3.5 shrink-0 rounded-full",
+                    getColorClassName(color, "bg")
+                  )}
+                />
+                <p
+                  className={cx(
+                    // base
+                    "whitespace-nowrap text-right",
+                    // text color
+                    "text-gray-700 dark:text-gray-300"
+                  )}
+                >
+                  {category}
+                </p>
+              </div>
               <p
                 className={cx(
                   // base
@@ -345,7 +364,7 @@ const ChartTooltip = ({ active, payload, label, valueFormatter }) => {
                   "text-gray-900 dark:text-gray-50"
                 )}
               >
-                {valueFormatter(value)}
+                {"$" + valueFormatter(value)}
               </p>
             </div>
           ))}

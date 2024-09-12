@@ -3,15 +3,15 @@ import { PriceContext } from "../App";
 import { AreaChart } from "./ui/charts";
 
 export const AreaChartHero = () => {
-  const { prices, active } = useContext(PriceContext);
+  const { pricesData, active } = useContext(PriceContext);
 
   return (
     <section>
       <AreaChart
         className="h-96"
-        data={prices[active]}
+        data={pricesData}
         index="date"
-        categories={["price"]}
+        categories={[...active]}
         onValueChange={(v) => console.log(v)}
       />
     </section>
