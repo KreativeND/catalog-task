@@ -1,7 +1,8 @@
+import Actions from "./actions";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 
 export const MenuTabs = () => (
-  <Tabs defaultValue="tab1">
+  <Tabs defaultValue="ChartTab">
     <TabsList>
       <TabsTrigger value="SummaryTab"><p className="tab-title">Summary</p></TabsTrigger>
       <TabsTrigger value="ChartTab"><p className="tab-title">Chart</p></TabsTrigger>
@@ -11,10 +12,10 @@ export const MenuTabs = () => (
     </TabsList>
     <div className="ml-2 mt-4">
       <TabsContent
-        value="SummaryTab"
+        value="ChartTab"
         className="space-y-2 text-sm leading-7 text-gray-600 dark:text-gray-500"
       >
-       
+       <Actions />
       </TabsContent>
     </div>
   </Tabs>
