@@ -30,6 +30,7 @@
     "@react-aria/datepicker": "^3.11.2",
     "@react-stately/datepicker": "^3.10.2",
     "@remixicon/react": "^4.2.0",
+    "@tremor/react": "^3.18.1",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "react": "^18.3.1",
