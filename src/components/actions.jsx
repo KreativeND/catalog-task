@@ -12,7 +12,7 @@ import { cx } from "../lib/utils";
 const Actions = () => {
   const { fullScreen, updateFullScreen, compare, updateCompare  } = useContext(PriceContext);
   return (
-    <section className="flex flex-col gap-6 items-start lg:flex-row lg:items-center lg:gap-32">
+    <section className="flex flex-col gap-6 items-start lg:flex-row max-lg::items-center max-lg::gap-32">
       <div className="flex gap-4">
         <button
           className="shadow-none border-transparent text-[#6F7177] dark:text-[#6F7177] text-[18px] bg-transparent hover:text-[#1A243A] dark:hover:text-[#1A243A]"

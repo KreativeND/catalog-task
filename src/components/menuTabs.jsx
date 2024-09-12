@@ -11,7 +11,7 @@ export const MenuTabs = () => {
 
   return (
     <Tabs defaultValue="ChartTab">
-      <TabsList>
+      <TabsList className="flex flex-wrap gap-5">
         <TabsTrigger value="SummaryTab">
           <p className="tab-title">Summary</p>
         </TabsTrigger>

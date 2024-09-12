@@ -13,7 +13,7 @@ const TimeBar = () => {
           <>
             <button key={period}
               className={cx(
-                "shadow-none border-transparent text-[#6F7177] dark:text-[#6F7177] text-[18px] bg-transparent hover:text-[#1A243A] dark:hover:text-[#1A243A] px-4 py-2",
+                "shadow-none border-transparent text-[#6F7177] dark:text-[#6F7177] text-[18px] bg-transparent hover:text-[#1A243A] dark:hover:text-[#1A243A] px-4 py-2 mx-2 ",
                 active.includes(period) && "bg-[#4B40EE] rounded-md text-white dark:text-white hover:text-white dark:hover:text-white"
               )}
               onClick={() => updateActive(period)}
